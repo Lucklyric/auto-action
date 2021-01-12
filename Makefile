@@ -1,7 +1,7 @@
 build:
 	python setup.py bdist_wheel sdist
 
-update:
+deploy:
 	twine upload dist/* --verbose
 
 clean:
