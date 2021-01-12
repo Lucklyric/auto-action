@@ -12,7 +12,7 @@ class BaseResolver(object):
         raise NotImplementedError
 
 class SimpleShellResolver(BaseResolver):
-    resolver_type = 'simple_shell'
+    resolver_type = 'shell'
 
     def fit(self, action_type):
         return action_type == SimpleShellResolver.resolver_type
@@ -41,7 +41,6 @@ class SimpleShellResolver(BaseResolver):
 
     def execute(self, action_config):
         shell_cmd_list = self.parse_action_config(action_config)
-        print(shell_cmd_list)
         subprocess.run(shell_cmd_list)
 
 
