@@ -1,0 +1,11 @@
+version: 0.0.1
+
+actions:
+  - type: python_module
+    target: autoact.examples.dummy_app
+    positional_arguments: 
+      - 1
+      - 2
+    optional_arguments: 
+      arg1: 2
+      arg2: 'post_string' 
