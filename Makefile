@@ -5,5 +5,5 @@ deploy:
 	twine upload dist/* --verbose
 
 clean:
-	rm -rf build dist autoact.egg-info
+	rm -rf build dist auto_action.egg-info create
 
